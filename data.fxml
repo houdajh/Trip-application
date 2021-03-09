@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="601.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+   <children>
+      <AnchorPane prefHeight="78.0" prefWidth="600.0" style="-fx-background-color: C96151;">
+         <children>
+            <Label layoutX="162.0" layoutY="26.0" prefHeight="35.0" prefWidth="262.0" text="USER REGISTRATION">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField layoutX="226.0" layoutY="94.0" prefHeight="25.0" prefWidth="262.0" />
+      <Label fx:id="name" layoutX="30.0" layoutY="97.0" prefHeight="17.0" prefWidth="110.0" text="name.surname">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="226.0" layoutY="126.0" prefHeight="25.0" prefWidth="262.0" />
+      <Label layoutX="39.0" layoutY="129.0" prefHeight="17.0" prefWidth="110.0" text="email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="226.0" layoutY="156.0" prefHeight="25.0" prefWidth="262.0" />
+      <Label layoutX="39.0" layoutY="159.0" prefHeight="17.0" prefWidth="110.0" text="phone">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="226.0" layoutY="188.0" prefHeight="25.0" prefWidth="262.0" />
+      <TextField layoutX="226.0" layoutY="218.0" prefHeight="25.0" prefWidth="262.0" />
+      <TextField layoutX="226.0" layoutY="250.0" prefHeight="25.0" prefWidth="262.0" />
+      <TextField layoutX="226.0" layoutY="285.0" prefHeight="25.0" prefWidth="262.0" />
+      <Label layoutX="39.0" layoutY="190.0" prefHeight="17.0" prefWidth="110.0" text="Destination">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="221.0" prefHeight="17.0" prefWidth="110.0" text="current location">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="253.0" prefHeight="17.0" prefWidth="110.0" text="passengers">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="288.0" prefHeight="17.0" prefWidth="110.0" text="time">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="226.0" layoutY="319.0" prefHeight="25.0" prefWidth="262.0" />
+      <Label layoutX="39.0" layoutY="322.0" prefHeight="17.0" prefWidth="110.0" text="Requires">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="Register" layoutX="232.0" layoutY="378.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="250.0" text="Register" textFill="#1f1e22" />
+      <Button fx:id="Close" layoutX="232.0" layoutY="418.0" mnemonicParsing="false" onAction="#cancelButtonOnAction2" onMouseClicked="#cancelButtonOnAction2" prefHeight="25.0" prefWidth="250.0" text="Close" />
+   </children>
+</AnchorPane>
