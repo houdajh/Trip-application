@@ -50,9 +50,9 @@ public class RegisterController implements Initializable {
         s.close();
     }
 
-   // public void closeButton(ActionEvent event){
-     //   Stage stage=(Stage) closeButton().getScene().getWindow();
-       // stage.close();
+    // public void closeButton(ActionEvent event){
+    //   Stage stage=(Stage) closeButton().getScene().getWindow();
+    // stage.close();
     //}
 //why?
     @Override
@@ -62,39 +62,38 @@ public class RegisterController implements Initializable {
     private Connection dataBaseLink=null;
     public  Connection getconnection(){
         String driver="com.mysql.jdbc.Driver";
-        String databaseName="Trip";
-        String databaseUser ="houda";
-        String databasePass="ff613658sx16028";
-        String url = "jdbc:mysql://localhost/"+databaseName;
+        String databaseName="trip";
+        String databaseUser ="root";
+        String databasePass="ff613658";
+        String url = "jdbc:mysql://localhost:3306/trip";
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            //Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            //Class.forName("postgresql.Driver");
+
             dataBaseLink= DriverManager.getConnection(url,databaseUser,databasePass);
-            //String DBurl = "jdbc:odbc:testDB";
-            //con = DriverManager.getConnection(DBurl);
+            System.out.println("connection has been established");
 
         }catch (Exception e){
             e.printStackTrace();
             e.getCause();
+            System.out.println("error connection");
         }
         return dataBaseLink;
     }
     //public void registerButton(Event event){
-       // DataBase connectNow = new DataBase();
-       // Connection connectDB = connectNow.getconnection();
-       // String connectQuery = "INSERT INTO `trip`.`customer` (`email`, `name.surname`, `phone`, `destination`, `passengers`, `Requires`, `current_loc`, `state`) VALUES ('"+email.getText()+"', '"+getName.getText()+"', '"+phone.getText()+"', '+"+dest.getText()+"', '"+passengers.getText()+"', '"+req.getText()+"', '"+loc.getText()+"', 'foreign');";
-       // try {
-             //Statement statement = connectDB.createStatement();
-            // ResultSet queryOutput = statement.executeQuery(connectQuery);
+    // DataBase connectNow = new DataBase();
+    // Connection connectDB = connectNow.getconnection();
+    // String connectQuery = "INSERT INTO `trip`.`customer` (`email`, `name.surname`, `phone`, `destination`, `passengers`, `Requires`, `current_loc`, `state`) VALUES ('"+email.getText()+"', '"+getName.getText()+"', '"+phone.getText()+"', '+"+dest.getText()+"', '"+passengers.getText()+"', '"+req.getText()+"', '"+loc.getText()+"', 'foreign');";
+    // try {
+    //Statement statement = connectDB.createStatement();
+    // ResultSet queryOutput = statement.executeQuery(connectQuery);
 
-             //while (queryOutput.next()) {
+    //while (queryOutput.next()) {
 
-             //}
+    //}
 
-           //  } catch (Exception e) {
-             //  e.printStackTrace();
-             // }
+    //  } catch (Exception e) {
+    //  e.printStackTrace();
+    // }
     public void registerButton(Event event) throws Exception{
 
         try {
@@ -108,7 +107,7 @@ public class RegisterController implements Initializable {
         }
 
 
-        }
+    }
 
 
 }
